@@ -1,0 +1,18 @@
+@mixin font($fontname, $filename, $fontweight, $fontstyle) {
+    @font-face {
+        font-family: $fontname;
+        src: url(#{'../fonts/'+$filename+'.eot'});
+        src: local('😥'),
+        url(#{'../fonts/'+$filename+'.woff'}) format("woff");
+        font-weight: $fontweight;
+        font-style: $fontstyle;
+    }
+}
+@include font('Poppins', 'Poppins-BoldItalic', 400, italic);
+@include font('Poppins-Regular', 'Poppins-BoldItalic', 400, italic);
+@include font('Roboto-700', 'Roboto-Bold', 700, normal);
+@include font('Roboto-400', 'Roboto-Regular', 400, normal);
+
+
+// Cera Pro
+// @include font('Cera Pro', 'Cera Pro-Regular', 400, normal);
