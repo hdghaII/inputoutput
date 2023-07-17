@@ -323,14 +323,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__title {
   position: absolute;
-  top: 0;
   display: flex;
   flex-direction: column;
   width: 377px;
   height: 147px;
   background-color: #E93B77;
   border-radius: 8px;
-  top: 130px;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .main__title--text {
   font-family: "Roboto-700", sans-serif;
@@ -359,6 +361,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 41px;
   padding-top: 163px;
   border-radius: 12px;
+  position: relative;
 }
 .main__input {
   display: flex;
@@ -367,6 +370,7 @@ h1, h2, h3, h4, h5, h6 {
 .main__input input {
   width: 361px;
   height: 42px;
+  border-color: #7B809A;
   border-radius: 10px;
   margin-bottom: 14px;
 }
@@ -376,6 +380,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 .main__checkbox label {
   font-family: "Roboto-400", sans-serif;
@@ -404,8 +409,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__checkbox--entry {
   display: flex;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   z-index: 2;
   border-radius: 50%;
   position: absolute;
@@ -413,8 +418,8 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #C7CCD0;
   border-style: solid;
   border-width: 1px;
-  top: 540px;
-  left: 775px;
+  top: 2px;
+  left: 0;
 }
 .main__subtitle {
   width: 100%;
@@ -434,6 +439,8 @@ h1, h2, h3, h4, h5, h6 {
 .checkbox {
   width: 20px;
   height: 20px;
+  z-index: 3;
+  opacity: 0;
   position: relative;
 }
 
