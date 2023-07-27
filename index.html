@@ -23,33 +23,39 @@
                         </div>
                         <div class="main__title--icons">
                             <div class="main__icon">
-                                <img src="./src/img/icon__first.svg" alt="Facebook">
+                                <a href=""><img src="./src/img/icon__first.svg" alt="Facebook"></a>
                             </div>
                             <div class="main__icon">
-                                <img src="./src/img/icon__second.svg" alt="Github">
+                                <a href=""><img src="./src/img/icon__second.svg" alt="Github"></a>
                             </div>
                             <div class="main__icon">
-                                <img src="./src/img/icon__third.svg" alt="Email">
+                                <a href=""><img src="./src/img/icon__third.svg" alt="Email"></a>
                             </div>
                         </div>
                     </div>
-                    <form class="main__input">
-                        <input class="email" type="text">
-                        <input class="password" type="text">
-                        <input class="telephone" type="text">
-                        <input class="fullname" type="text">
-                    </form>
-                    <form class="main__checkbox">
+                <form>
+                    <div class="main__input">
+                        <p class="email__error"> </p>
+                        <input class="email" type="text" placeholder="Email" >
+                        <p class="password__error"> </p>
+                        <input class="password" type="password" placeholder="Password">
+                        <p class="telephone__error"> </p>
+                        <input class="telephone" type="text" placeholder="Phone Number" >
+                        <p class="fullname__error"> </p>
+                        <input class="fullname" type="text" placeholder="Name and Surname">
+                    </div>
+                    <div class="main__checkbox">
                         <input class="checkbox" type="checkbox">
                         <label for="checkbox">Remember Me
                             <div class="main__checkbox--entry" id="main__checkbox"></div>
                         </label>
-                    </form>
+                    </div>
                     <div class="main__button">
-                        <button class="main__btn">
+                        <button class="main__btn" type="submit">
                             SIGN IN
                         </button>
                     </div>
+                </form>
                     <div class="main__subtitle">
                         Don't have an account? <span><a href="#index.html">Sign Up</a></span>
                     </div>
@@ -59,7 +65,7 @@
     <!-- page content -->
 
     <footer></footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="assets/js/frontend.min.js"></script>
 </body>
 
