@@ -9,6 +9,7 @@
         align-items: center;
         height: 100%;
     }
+
     &::after {
         content: '';
         position: absolute;
@@ -72,7 +73,7 @@
             height: 42px;
             border: 1px solid #C7CCD0;
             border-radius: 10px;
-            margin-bottom: 14px;
+            margin-bottom: 20px;
             padding-left: 16px;
         }
     }
@@ -112,6 +113,13 @@
         border: none;
         border-radius: 8px;
     }
+    &__icon {
+        a {
+            display: block;
+            width: 23px;
+            height: 23px;
+        }
+    }
     &__checkbox--entry {
         display: flex;
         width: 20px;
@@ -131,10 +139,10 @@
         &:after {
             content: '';
             display: flex;
-            width: 16px;
-            height: 16px;
-            top: 1px;
-            left: 1px;
+            width: 10px;
+            height: 10px;
+            top: 4px;
+            left: 4px;
             position: absolute;
             z-index: 2;
             border-radius: 50%;
@@ -170,21 +178,21 @@
 .password__error {
     font-size: 12px;
     position: absolute;
-    top: 96px;
+    top: 104px;
     left: 10px;
     color: #E93B77;
 }
 .telephone__error {
     font-size: 12px;
     position: absolute;
-    top: 152px;
+    top: 165px;
     left: 10px;
     color: #E93B77;
 }
 .fullname__error {
     font-size: 12px;
     position: absolute;
-    top: 210px;
+    top: 230px;
     left: 10px;
     color: #E93B77;
 }
